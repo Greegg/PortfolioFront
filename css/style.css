@@ -1,0 +1,213 @@
+/* Estilização padrão */
+*{
+    margin:0; 
+	padding:0;
+    font-family: Helvetica,arial;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    margin-right: 18px;
+    font-weight: 700;
+    /* background-color: #a229d6; */
+    background-color: #93A8AC;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+h2.titulo{
+    color:white;
+    font-size: 28px;
+    text-align: center;
+
+}
+
+/* Cabeçalho */
+
+header{
+    /* background-color:  	#BA55D3; */
+    background-color: #084d6e;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    color: #ece4e4;
+    text-decoration: none;
+    display:  inline-block;
+    transition: .1s;
+}
+
+header a:hover{
+    color: #ffffff;
+    transform:scale(1.05);
+}
+
+header nav ul{
+    list-style-type:  none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding:  0 40px;
+    text-align: center;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #162, 41, 214;
+    transform:scale(1.05);
+}
+
+
+/* Estilo do topo do site */
+section.topo-do-site{
+    padding:15px 3%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px
+}
+
+.topo-do-site h1{
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color:#BA55D3
+}
+
+.topo-do-site .txt-topo-site p{
+    color:#ffffff;
+    margin: 20px 20px 20px 0;
+    font-size: 30px;
+    text-align: left;
+    text-indent:2em 
+}
+
+.topo-do-site .img-topo-site img{
+    max-width: 450px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    filter: drop-shadow(0 0 5px #a235c4);
+    margin-right: 90px;
+}
+
+
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* Estilo das Especialidades */
+
+section.especialidades{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+section.especialidades .flex{
+gap: 60px;
+
+}
+
+.especialidades .especialidades-box{
+    padding: 40px;
+    color: white;
+    border: 2px solid #ffffff;
+    margin-top: 15px;
+    border-radius: 20px;
+transition: 0.2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff78;
+
+}
+
+
+.especialidades .especialidades-box i{
+    font-size: 48px;;
+}
+
+.especialidades-box img {
+    filter: brightness(0) invert(1);
+    width: 48px; /* Altere o tamanho conforme necessário */
+}
+
+.img-csharp h3{
+    color: white;
+}
+.img-csharp p{
+    color: white;
+}
+
+/* Estilo sobre */
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+.sobre .txt-sobre{
+    color: white;
+
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;;
+}
+
+
+
+/* Corpo */
+
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+h1{
+    color:#FFFFFF;
+    text-align: center; 
+    text-shadow: 1px 1px 1px #111111; 
+    padding: 20px; 
+}
+
+#principal{
+    /* background-image: url('https://wallpapercave.com/wp/wp6476461.png'); */
+    background-image: url('https://img.freepik.com/fotos-premium/superficie-de-concreto-roxo-colorido-com-textura-de-arranhoes_150101-2849.jpg');
+    background-size: cover;
+    min-height: 776px;
+}
+
+/* rodapé */
+footer{
+    background-color: #BA55D3;
+    color:#FFFFFF;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
