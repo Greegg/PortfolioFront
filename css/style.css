@@ -1,16 +1,16 @@
 /* Estilização padrão */
-*{
-    margin:0; 
-	padding:0;
-    font-family: Helvetica,arial;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, arial;
     box-sizing: border-box;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.btn-contato button{
+.btn-contato button {
     padding: 10px 40px;
     margin-right: 18px;
     font-weight: 700;
@@ -22,13 +22,13 @@
     cursor: pointer;
 }
 
-button:hover{
-        box-shadow: 0px 0px 8px #162, 41, 214;
-        transform:scale(1.05);
+button:hover {
+    box-shadow: 0px 0px 8px #162, 41, 214;
+    transform: scale(1.05);
 }
 
-h2.titulo{
-    color:white;
+h2.titulo {
+    color: white;
     font-size: 28px;
     text-align: center;
 
@@ -36,69 +36,69 @@ h2.titulo{
 
 /* Cabeçalho */
 
-header{
+header {
     /* background-color:  	#BA55D3; */
     background-color: #084d6e;
 }
 
-header > .interface{
+header>.interface {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-a{
+a {
     color: #ece4e4;
     text-decoration: none;
-    display:  inline-block;
+    display: inline-block;
     transition: .1s;
 }
 
-header a:hover{
+header a:hover {
     color: #ffffff;
-    transform:scale(1.05);
+    transform: scale(1.05);
 }
 
-header nav ul{
-    list-style-type:  none;
+header nav ul {
+    list-style-type: none;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
-    padding:  0 40px;
+    padding: 0 40px;
     text-align: center;
 }
 
 /* Estilo do topo do site */
-section.topo-do-site{
-    padding:150px 3%;
+section.topo-do-site {
+    padding: 150px 3%;
 }
 
-section.topo-do-site .flex{
+section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
     gap: 90px
 }
 
-.topo-do-site h1{
+.topo-do-site h1 {
     color: #ffffff;
     font-size: 28px;
     line-height: 40px;
 }
 
-.topo-do-site .txt-topo-site h1 span{
-    color:#BA55D3
+.topo-do-site .txt-topo-site h1 span {
+    color: #BA55D3
 }
 
-.topo-do-site .txt-topo-site p{
-    color:#ffffff;
-    margin: 20px 20px 20px 230px;
+.topo-do-site .txt-topo-site p {
+    color: #ffffff;
+    margin: 20px 20px 20px 30px;
     font-size: 30px;
     text-align: justify;
     /* text-indent:2em  */
 }
 
-.topo-do-site .img-topo-site img{
+.topo-do-site .img-topo-site img {
     max-width: 950px;
     position: relative;
     animation: flutuar 1.5s ease-in-out infinite alternate;
@@ -106,108 +106,112 @@ section.topo-do-site .flex{
     margin-right: 90px;
 }
 
-.topo-do-site .btn-contato button{
+.topo-do-site .btn-contato button {
     margin-left: 230px;
 }
 
 
-@keyframes flutuar{
-    0%{
-        top:0;
+@keyframes flutuar {
+    0% {
+        top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
 /* Estilo das Especialidades */
 
-section.especialidades{
+section.especialidades {
     margin-top: 5px;
-    display: flex;  
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-section.especialidades .flex{
-gap: 60px;
+section.especialidades .flex {
+    gap: 15px;
 }
 
-.especialidades .especialidades-box{
-    padding: 40px;
+.especialidades .especialidades-box {
+    padding: 20px;
     color: white;
     border: 2px solid #ffffff;
     margin-top: 15px;
     border-radius: 20px;
-transition: 0.2s;
+    transition: 0.2s;
 }
 
-.especialidades .especialidades-box:hover{
+.especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 8px #ffffff78;
 
 }
 
 
-.especialidades .especialidades-box i{
-    font-size: 48px;;
+.especialidades .especialidades-box i {
+    font-size: 48px;
+    ;
 }
 
 .especialidades-box img {
     filter: brightness(0) invert(1);
-    width: 48px; /* Altere o tamanho conforme necessário */
+    width: 48px;
+    /* Altere o tamanho conforme necessário */
 }
 
-.img-csharp h3{
+.img-csharp h3 {
     color: white;
 }
 
-.img-csharp p{
+.img-csharp p {
     color: white;
 }
 
 /* Estilo sobre */
 
-section.sobre{
+section.sobre {
     padding: 30px 4%;
 }
 
-.img-sobre{
-    margin-top:50px;
+.img-sobre {
+    margin-top: 50px;
     margin-left: 50px;
     padding: 20px;
     border-radius: 50%
 }
 
-section.sobre .img-sobre img{
-    width:300px;
+section.sobre .img-sobre img {
+    width: 300px;
     border-radius: 50%
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
 
-.sobre .txt-sobre{
+.sobre .txt-sobre {
     color: white;
 }
 
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     font-size: 28px;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    ;
 }
 
-.sobre .txt-sobre p{
-    margin:20px 0;
+.sobre .txt-sobre p {
+    margin: 20px 0;
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button{
+.sobre .txt-sobre .btn-social button {
     width: 45px;
-    height: 45px; 
-    border-radius:50%;
+    height: 45px;
+    border-radius: 50%;
     border: none;
     background-color: #93A8AC;
     font-size: 20px;
@@ -218,32 +222,58 @@ section.sobre .flex{
 /* Corpo */
 
 
-body{
+body {
     background-color: black;
     height: 100vh;
 }
 
-h1{
-    color:#FFFFFF;
-    text-align: center; 
-    text-shadow: 1px 1px 1px #111111; 
-    padding: 20px; 
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 1px 1px 1px #111111;
+    padding: 20px;
 }
 
-#principal{
+#principal {
     /* background-image: url('https://wallpapercave.com/wp/wp6476461.png'); */
     /* background-image: url('https://img.freepik.com/fotos-premium/superficie-de-concreto-roxo-colorido-com-textura-de-arranhoes_150101-2849.jpg'); */
-    background-color: #084d6e;;
+    background-color: #084d6e;
+    ;
     background-size: cover;
     min-height: 776px;
 }
 
 /* rodapé */
-footer{
+footer {
     background-color: #084d6e;
-    color:#FFFFFF;
+    color: #FFFFFF;
     height: 50px;
     text-align: center;
     padding: 10px;
 }
 
+@media screen and (max-width: 1020px) {
+
+    /* classe geral */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+
+    /* cabeçalho */
+    .nav-menu,
+    .btn-contato {
+        display: none;
+    }
+
+
+    /* Sobre */
+
+    .img-sobre {
+        margin-left: 0px;
+    }
+}
